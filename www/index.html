@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<title>Cogote v4</title> 
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+    <div id="header">
+        <div id="logo">
+            <img src="logo.png" class="logo">
+        </div>
+        <input id="search_query" class="light_search_font" value="Search song...">
+        <div id="add_playlist">
+            <button type="buttom" id="add_tab">
+                <img src="plus.png" id="add_img">
+            </button>
+        </div>
+    </div>
+
+
+    <div id="phone">
+        <div id="playlists">
+                <div id="tab_null" class="tab">
+                    <p id="tab_name_null" class="tab_name">All songs</p>
+                    <button class="tab_settings">
+                        <img src="triple_dot.png" class="triple_dot_img">  
+                    </button>
+                </div>
+        </div>
+
+    </div>
+
+
+    <div id="rows">
+        <div id="row_null" class="row">
+            <p id="song_null" class="rows_song">Title 0</p>
+            <button type="button" class="del_song">
+                <img src="minus.png" class="download_img">
+            </button>
+            <button type="button" class="download_button">
+                <img id="download_status" src="download.png" class="download_img">
+            </button>
+        </div>
+
+        <div id="result_null" class="search_row">
+            <div id="thumb_null" class="thumb">
+                <img src="mane.webp" class="thumb_img">
+            </div>
+            <p id="title_null" class="search_title">Search Result</p>
+            <p id="views_null" class="search_views">5M</p>
+            <button type="button" class="search_save">
+                <img src="plus.png" class="search_img">
+            </button>
+        </div>
+    </div>
+
+
+    <div id="play">
+        <audio id="main_player" controls controlsList="nodownload">
+        </audio>
+        <button type="button" id="right_arrow" class="playback_control">
+            <img src="right_arrow.png" class="thumb_img">
+        </button>
+        <button type="button" id="left_arrow" class="playback_control">
+            <img src="left_arrow.png" class="thumb_img" >
+        </button>
+        <p id="currently_playing">Currently Playing</p>
+    </div>
+    
+
+</body>
+<script src="cordova.js"></script>
+<script src="js/IO.js"></script>
+<script src="js/player.js"></script>
+<script src="js/search.js"></script>
+<script src="js/mini_playlist.js"></script>
+<script src="js/song.js"></script>
+<script src="js/util.js"></script>
+<script src="js/main.js"></script>
+
+
+</html>
